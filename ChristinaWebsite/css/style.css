@@ -41,7 +41,7 @@ p {
   opacity: .8;
   width: 100%;
   height: 70px;
-  position; fixed;
+  position: fixed;
   top: 0px;
   padding: 0 30px;
 }
@@ -94,7 +94,7 @@ img {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  text: center;
+  text-align: center;
   height: 100%;
   padding: 0 20px;
 }
