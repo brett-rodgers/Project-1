@@ -13,7 +13,7 @@
   display: inline-block;
   padding: 10px 30px;
   color: #fff;
-  background-color: #4CBCC0;
+  background-color: #3e9699;
   border-radius: 5px;
   opacity: .9;
 }
@@ -39,9 +39,19 @@
   color: #fff;
 }
 
-.btn-secondary {
+.btn-light {
   background: #f4f4f4;
   color: #333;
 }
 
+/* Flex Items */
+.flex-items {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  height: 100%;
+}
 
+.flex-items > div {
+  padding: 20px;
+}
