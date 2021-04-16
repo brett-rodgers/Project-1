@@ -4,7 +4,7 @@
 }
 
 .text-secondary {
-  color: #0284d0
+  color: #c04f4c
 }
 
 /* Button */
@@ -19,7 +19,7 @@
 }
 
 .btn:hover {
-  opacity: .9;
+  /* opacity: .9; */
   color: #2e6264;
   background: #f4f4f4;
 }
@@ -30,7 +30,7 @@
 }
 
 .btn-secondary, .bg-secondary {
-  background: #DBC9BA;
+  background: #c04f4c;
   color: #fff;
 }
 
@@ -143,3 +143,9 @@
   max-width: 25%;
   padding: 0 4px;
 }
+
+#home {
+  max-width: 100%;
+  height: auto;
+}
+
