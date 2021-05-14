@@ -23,7 +23,7 @@ a {
 }
 
 h1, h2 {
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.2;
 }
 
@@ -38,7 +38,7 @@ p {
   justify-content: space-between;
   background-color: #222;
   color: #fff;
-  opacity: .8;
+  opacity: .7;
   width: 100%;
   height: 70px;
   position: fixed;
@@ -206,21 +206,50 @@ img {
 }
 
 /* Mobile */
-@media(max-width:768px) {
+@media(max-width:500px) {
   .navbar {
     flex-direction: column;
-    height: 130px;
-    padding: 0 40px 0;
+    height: 180px;
+    padding: 0px;
     text-align: center;
   }
 
   .navbar .img-1 {
-    margin-right: -20px;
+    padding: 0px;
+  }
+
+  .company-title {
+    font-size: ;
+  }
+  
+  .container {
+    display: inline-block;
+    width: 100%;
+    vertical-align: top;
+    text-align:center;
+    position:relative;
   }
 
   .navbar a {
     padding: 10px 10px;
-    margin: 0 3px 5px;
+  }
+  
+  .hero .content h1 {
+    font-size: 39px;
+  }
+
+  .hero .content p {
+    font-size: 25px;
+    margin-top: -30px;
+  }
+
+  .hero {
+    height: 100%;
+    padding: 20px 0;
+  }
+
+  .content {
+    margin: 110px 5px 5px;
   }
 
   .flex-items {
@@ -230,5 +259,51 @@ img {
   .flex-columns .column, .flex-grid .column {
     flex: 100%;
     max-width: 100%;
+  }
+
+  .states img {
+    width: 70%;
+  }
+}
+
+/* Ipad */
+@media (min-width: 501px) and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    height: 190px;
+    padding: 4px 40px 10px;
+    text-align: center;
+  }
+
+  .navbar ul {
+    font: 45px;
+  }
+  .company-title {
+    padding: 18px 5px 0 10px;
+    font-size: 50px;
+  }
+  
+  .navbar .img-1 {
+    padding: 5px 0px;
+    width: 5rem;
+  }
+
+  .navbar a {
+    padding: 20px 30px;
+    margin: 0 3px 5px;
+    font-size: 24px;
+  }
+
+  .flex-items {
+    flex-direction: column;
+  }
+
+  .flex-columns .column, .flex-grid .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+
+  .states img {
+    width: 70%;
   }
 }
