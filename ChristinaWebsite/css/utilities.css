@@ -18,6 +18,20 @@
   border-radius: 5px;
 }
 
+.btn-2 {
+  cursor: pointer;
+  display: inline-block;
+  padding: 10px 30px;
+  color: #2e6264;
+  background-color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+
+.btn-2:hover {
+  color: #f4f4f4;
+  background: #2e6264;
+}
 .btn:hover {
   /* opacity: .9; */
   color: #2e6264;
@@ -41,12 +55,17 @@
 
 .btn-light, .bg-light {
   background: #fff;
-  color: #4CBCC0;
+  color: #333;
 }
 
 .btn-outline {
   background: transparent;
   border: 1px solid #fff;
+}
+
+.btn-outline-2 {
+  background: transparent;
+  border: 1px solid #333;
 }
 
 /* Flex Items */
