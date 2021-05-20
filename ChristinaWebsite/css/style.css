@@ -59,17 +59,14 @@ img {
 .img-1 {
   align-self: flex-start;
   font-weight: 400;
-  width: 3.4rem;
-  padding: 0 14px 15px 0;
-}
-
-.company-title {
-  padding-top: 2px;
+  width: 3rem;
+  margin: -1px 5px;
+  padding: 4px 0px 0px;
 }
 
 .navbar a {
   color: #fff;
-  padding: 10px 20px;
+  padding: 10px 15px;
   margin: 0 .5px;
 }
 
@@ -124,6 +121,13 @@ img {
   z-index: 1;
 }
 
+.hero.blog {
+  background: url('../img/blog/blog1.jpg') no-repeat center center/cover;
+  height: 40vh;
+}
+
+.hero.blog
+
 /* Icons */
 .icons {
   padding: 30px;
@@ -142,11 +146,11 @@ img {
   margin-bottom: 15px;
 }
 
-.cases img:hover {
+.modalities img:hover {
   opacity: 0.7;
 }
 
-.cases .column {
+.modalities .column {
   object-fit: cover;
   max-height: 100%;
   width: auto;
@@ -155,7 +159,7 @@ img {
 .column .column-2 {
   padding-bottom: 10px;
 }
-.states img {
+.locations img {
   border-radius: 50%;
 }
 
@@ -209,29 +213,24 @@ img {
 @media(max-width:500px) {
   .navbar {
     flex-direction: column;
-    height: 180px;
-    padding: 0px;
+    height: 120px;
+    padding: 4px 40px 10px;
     text-align: center;
   }
 
-  .navbar .img-1 {
-    padding: 0px;
-  }
-
-  .company-title {
-    font-size: ;
+  
+  .container {  
+    width: 100%;
+    white-space: nowrap;
+    margin-right: 35px;
   }
   
-  .container {
-    display: inline-block;
-    width: 100%;
-    vertical-align: top;
-    text-align:center;
-    position:relative;
+  .img-1 {
+    margin: -2px 5px;
   }
 
   .navbar a {
-    padding: 10px 10px;
+    padding: 10px 5px;
   }
   
   .hero .content h1 {
@@ -279,8 +278,8 @@ img {
     font: 45px;
   }
   .company-title {
-    padding: 18px 5px 0 10px;
-    font-size: 50px;
+    font: 25px;
+    
   }
   
   .navbar .img-1 {
@@ -303,7 +302,7 @@ img {
     max-width: 100%;
   }
 
-  .states img {
+  .locations img {
     width: 70%;
   }
 }
