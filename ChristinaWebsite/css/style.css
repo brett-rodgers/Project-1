@@ -38,12 +38,14 @@ p {
   justify-content: space-between;
   background-color: #222;
   color: #fff;
-  opacity: .7;
+  opacity: .9;
   width: 100%;
   height: 70px;
   position: fixed;
   top: 0px;
   padding: 0 30px;
+  font-weight: 700;
+  z-index: 10;
 }
 
 .container {
@@ -98,13 +100,14 @@ img {
 
 .hero .content h1 {
   font-size: 55px;
-  padding-top: 150px; 
+  z-index: 7;
 }
 
 .hero .content p {
   font-size: 40px;
   max-width: 600px;
   margin: 0 0 30px;
+  z-index: 7;
 }
 
 .hero::before {
@@ -118,15 +121,13 @@ img {
 }
 
 .hero * {
-  z-index: 1;
+  z-index: 10;
 }
 
 .hero.blog {
-  background: url('../img/blog/blog1.jpg') no-repeat center center/cover;
-  height: 40vh;
+  background: url('../img/home/sigmund-B-x4VaIriRc-unsplash.jpg') no-repeat center center/cover;
+  height: 30vh;
 }
-
-.hero.blog
 
 /* Icons */
 .icons {
@@ -217,7 +218,6 @@ img {
     padding: 4px 40px 10px;
     text-align: center;
   }
-
   
   .container {  
     width: 100%;
@@ -234,7 +234,9 @@ img {
   }
   
   .hero .content h1 {
-    font-size: 39px;
+    font-size: 30px;
+    padding: 50px 0 0;
+    font-weight: 575;
   }
 
   .hero .content p {
@@ -278,8 +280,7 @@ img {
     font: 45px;
   }
   .company-title {
-    font: 25px;
-    
+    font: 25px; 
   }
   
   .navbar .img-1 {

@@ -7,6 +7,10 @@
   color: #c04f4c
 }
 
+.text-dark {
+  color: #333;
+}
+
 /* Button */
 .btn {
   cursor: pointer;
