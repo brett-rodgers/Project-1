@@ -44,8 +44,11 @@ p {
   position: fixed;
   top: 0px;
   padding: 0 30px;
-  font-weight: 700;
-  z-index: 10;
+  transition: 0.5s;
+}
+
+.navbar.top {
+  background: transparent;
 }
 
 .container {
@@ -64,7 +67,7 @@ img {
 }
 
 .company-title {
-  font-size: 33;
+  font-size: 33px;
 }
 
 .company-title-2 {
@@ -75,6 +78,7 @@ img {
   color: #fff;
   padding: 10px 15px;
   margin: 0 .5px;
+  font-weight: 400;
 }
 
 .navbar a:hover {
@@ -105,14 +109,12 @@ img {
 
 .hero .content h1 {
   font-size: 55px;
-  z-index: 7;
 }
 
 .hero .content p {
   font-size: 40px;
   max-width: 600px;
   margin: 0 0 30px;
-  z-index: 7;
 }
 
 .hero::before {
@@ -266,7 +268,6 @@ img {
   
   .hero .content h1 {
     font-size: 30px;
-    font-weight: 800;
   }
 
   .hero .content p {
