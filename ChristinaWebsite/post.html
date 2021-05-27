@@ -3,17 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
   <link rel="stylesheet" href="css/utilities.css">
   <link rel="stylesheet" href="css/style.css">
   <title>Read My Blog</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+  <script src="https://kit.fontawesome.com/235bfa5e72.js" crossorigin="anonymous">
+  </script>
 </head>
 <body id="home">
   <header class="hero blog">
-    <div id="navbar" class="navbar">
+    <div id="navbar" class="navbar top">
       <h1 class="container">
-        <img class="img-1" src="img/home/logolotus7.png" alt=""></img>
-        <div class="company-title"><span class="text-primary">Christina Ramirez</span><span class="company-title-2" style="font-size: 75%;"> MFT</span></div>
+        <div class="container-title"><span class="text-primary            company-title"><img class="img-1"
+        src="img/home/logolotus7.png" alt=""></img>Christina Ramirez </span><span class="company-title-2">
+        MFT</span>
+        </div>
       </h1>
       <nav>
         <ul>
@@ -54,5 +58,25 @@
     </div>
     <p>Copyright &copy; 2020- Christina Ramirez MFT PLLC</p>
   </footer>
+  <script>
+    const navbar = document.getElementById('navbar');
+    let scrolled = false;
+
+    window.onscroll = function () {
+      if (window.pageYOffset > 100) {
+        navbar.classList.remove('top');
+        if (!scrolled) {
+          navbar.style.transform = 'translateY(0px)';
+        }
+        setTimout(function () {
+          navbar.style.transform = 'translateY(0px)';
+          scrolled = true;
+        }, 200);
+      } else {
+        navbar.classList.add('top');
+        scrolled = false;
+      }
+    }; 
+  </script>
 </body>
 </html>
