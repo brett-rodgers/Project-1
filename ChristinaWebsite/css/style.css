@@ -47,6 +47,31 @@ p {
   transition: 0.5s;
 }
 
+#navbar-2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 30px;
+  margin: 5px;
+}
+
+#navbar-2 .logo {
+  display: flex;
+  align-items: center;
+}
+
+#navbar-2 .company-title {
+  font-size: 22px;
+}
+
+#navbar-2 .company-title-2 {
+  font-size: 20px;
+}
+
+#navbar-2 .img-1 {
+  width: 2rem;
+}
+
 .navbar.top {
   background: transparent;
 }
@@ -239,7 +264,7 @@ img {
 }
 
 .footer .social > * {
-  margin-right: 30px;
+  margin: auto 15px;
 }
 
 /* Mobile */
@@ -254,6 +279,11 @@ img {
   .navbar a {
     padding: 20px 6px 10px;
     font-size: 12px;
+  }
+
+  #navbar-2 {
+    flex-direction: column;
+    text-align: center;
   }
 
   .company-title {
